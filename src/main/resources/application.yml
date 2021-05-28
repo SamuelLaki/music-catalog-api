@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: helloworld
+datasources:
+  default:
+    url: jdbc:postgresql://${SQL_URL:`localhost:5432/postgres?currentSchema=public`}
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: mysecretpassword
+    dialect: POSTGRES
+
